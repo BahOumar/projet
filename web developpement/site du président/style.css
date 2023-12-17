@@ -1,0 +1,44 @@
+h{
+    font-size: 200px;
+}
+div{
+    display: flex;
+}
+body{
+    background-color: aqua;
+    padding: 0%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    min-height: 100vb;
+}
+#animation-title{
+    text-align: center;
+    animation-name: title;
+    animation-duration: 3s;
+}
+@keyframes title {
+    from{
+        transform: translateX(300px);
+    }
+    50%{
+        transform: translate(-200px);
+    }
+    TO{
+      transform: translateX(0px);
+    }
+}
+
+.container{
+    display: flex;
+}
+.card{
+    border-radius: 20px;
+    margin-left: 10px;
+    background-color: brown;
+    flex: 1;
+}
+.card:hover{
+    flex: 2;
+    background-color: rgb(red, green, blue);
+}

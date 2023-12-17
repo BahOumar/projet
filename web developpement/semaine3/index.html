@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1 class="scale"></h1>
+    <h1 class="transition"></h1>
+    <h1 class="skew"></h1>
+    <h1 class="rotation"></h1>
+    </div>
+    <h3>bonjour je suis en mode rotation</h3>
+    <style>
+        h3{
+            font-size: 30px;
+            transform: rotate(60deg);
+            animation: scrollTxt 10s linear infinite;
+        }
+        @keyframes{
+            0%{
+
+            }
+        }
+        .rotation{
+            width: 200px;
+            height: 70px;
+            background-color: brown;
+        }
+        .rotation:hover{
+            background-color: brown;
+            transform: rotate(45deg);
+        }
+        .skew{
+            width: 400px;
+            height: 300px;
+            background-color: aqua;
+        }
+        .skew .hover{
+            transform: skew(30deg);
+        }
+        .transition{
+            width: 400px;
+            height: 200px;
+            background-image: url(../FAST-GRILL/buger.jpg);
+        }
+        .transition:hover{
+            transform: translate(30px);
+        }
+        .scale{
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+        }
+        .scale:hover{
+            transform: scale(3);
+        }
+    </style>
+</body>
+</html>

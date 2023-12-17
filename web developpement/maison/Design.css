@@ -1,0 +1,18 @@
+nav{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 60%;
+}
+.ff{
+    color: blueviolet;
+    margin-left: 2em;
+}
+#rr{
+    color: brown;
+}
+div{
+    color: aqua;
+    justify-content: center;
+    display: block;
+    background-image: url(../FLEX/hot\ dog.jfif);
+}

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST-GRILL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="Acceuil">
+        <nav>
+            <div class="logo">
+                <img src="./LOGO FAST GRILL.jpg" alt="">
+            </div>
+
+            <ul>
+                <li><a href="#Acceuil">Acceuil</a></li>
+                <li><a href="#A Propos">A Propos</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Employée">Employée</a></li>
+                <li><a href="#Commande">Commande</a></li>
+            </ul>
+              <a href="./index.html">Login</a>
+              
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"><a href="./Recherche.html">Recherche</a></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            
+
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>Commandez Votre Meilleur<span>Nourriture à Tout Moment</span><br>Notre Délicieuse Cuisine Vous Attend</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="./buger.jpg">
+            </div>
+
+        </div>
+<br>
+<br>
+<br>
+        <div class="main_btn">
+            <a href="#"> Commandez Maintenant</a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+    </section>
+<br>
+
+
+    <!--A Propos-->
+
+    <div class="A Propos" id="A Propos">
+        <div class="a propos_main">
+
+            <div class="image">
+                
+            </div>
+
+            <div class="a propos_text">
+                <h1><span>A Propos</span> De Nous</h1>
+                 <br>       
+                <h3>Pourquoi nous choisir ?</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, est. Doloremque 
+                    sapiente veritatis laboriosam corrupti optio et maxime. Ad, amet explicabo eaque labore 
+                    cupiditate quasi nostrum nemo recusandae id quibusdam? Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Doloremque ab, dolores pariatur cum exercitationem, illo nisi 
+                    veritatis vitae ea deleniti fugiat quisquam tempora, accusantium corrupti excepturi optio. 
+                    Inventore, cupiditate recusandae.
+                </p>
+            </div>
+
+        </div>
+<br>
+
+</br>
+<a href="#" class="order_btn" <button id="cmd_button">Commandez Maintenant</button>
+    <script>
+        var button=document.getElementById("cmd_button");
+        button.addEventListener("click",function(){
+        var 
+        Nom=prompt('Nom:'),
+        Prenom=prompt('Prenom:'),
+        Sexe=prompt('sexe'),
+        TypedeCarte=prompt('Type de Carte'),
+        CarteBancaire=prompt('Numéro de la carte'),
+        DateExpiration=prompt('MM/AA'),
+        CVC=prompt('CVC'),
+        Email=prompt('Email');
+        commande=prompt('Votre commande'),
+        Montant=prompt('prix');
+        if((Montant<=0 && CarteBancaire<= maxlength(14) )){
+            alert('Nom:               '+Nom+
+            '\nPrenom:             '+Prenom+
+            '\nSexe:            '+Sexe+
+            '\nTypedeCarte:        '+TypedeCarte+
+            '\nCarteBancaire:           '+CarteBancaire+
+            '\nDateExpiration:                  '+DateExpiration+
+            '\nCVC:        '+CVC+
+            '\nEmail:        '+Email+
+            '\ncommande:        '+commande+
+            '\nMontant:        '+Montant+
+            '\nAchat Effectué');
+        }else{
+            alert('Nom:'+Nom+
+            '\nPrenom:'+Prenom+
+            '\nSexe:'+Sexe+
+            '\nTypedeCarte:'+TypedeCarte+
+            '\nCarteBancaire:'+CarteBancaire+
+            '\nDateExpiration:'+DateExpiration+
+            '\nCVC:'+CVC+
+            '\nEmail:'+Email+
+            '\ncommande:'+commande+
+            '\nMontant:'+Montant+
+            '\nSolde Insuffisant ou Verifier vos données');
+        }
+         }
+                        );</script> </a>
+
+    </div>
+
+ <br>
+
+
+
+
+    <!--Menu-->
+
+    <div class="menu" id="Menu">
+        <h1>Nos<span>Menu</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./humberger.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>HumBuger</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>2000 F CFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+            
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./spaghetti.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Spaghetti</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>500 F cfa</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./Lasagne.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>lasagne</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>1500 F CFA </h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./Boisson.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Boisson</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>500 F CFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./pizza.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>pizza</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>5000 F CFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant></a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./hot dog.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Hot Dog</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>3000 F CFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./jus.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Jus</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>1000 F CFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./biryani.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Biryani</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>1500 F CFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./chocolat.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Chocolat</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>500 F CFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./crème glacée.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Crème Glacée</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>750 F CFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./Panini.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Panini</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>1000 F CFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="./chawarma poulet.jfif">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Sandwich</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum assumenda voluptates
+                    </p>
+                    <h3>1000 F CFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Commandez Maintenant</a>
+                </div>
+
+            </div> 
+            
+        </div>
+
+    </div>
+
+
+    <!--Employée-->
+
+    <div class="Employée" id="Employée">
+        <h1>Employée<span>Employée</span></h1>
+
+        <div class="Employée_box">
+            <div class="Employée_card">
+
+                <div class="Employée_profile">
+                    <img src="./review_4.png">
+                </div>
+
+                <div class="Employée_text">
+                    <h2 class="name">YACOUBA</h2>
+
+                    <div class="Employée_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="Employée_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                        blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                        asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                        dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates 
+                        repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo 
+                        pariatur. Fuga aperiam impedit illo atque repellendus!
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="Employée_card">
+
+                <div class="Employée_profile">
+                    <img src="./review_3.png">
+                </div>
+
+                <div class="Employée_text">
+                    <h2 class="name">MOHAMED</h2>
+
+                    <div class="Employée_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="Employée_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                        blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                        asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                        dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates 
+                        repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo 
+                        pariatur. Fuga aperiam impedit illo atque repellendus!
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="Employée_card">
+
+                <div class="Employée_profile">
+                    <img src="./review_2.png">
+                </div>
+
+                <div class="Employée_text">
+                    <h2 class="name">FAMA</h2>
+
+                    <div class="Employée_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="Employée_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                        blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                        asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                        dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates 
+                        repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo 
+                        pariatur. Fuga aperiam impedit illo atque repellendus!
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="Employée_card">
+
+                <div class="Employée_profile">
+                    <img src="./review_1.png">
+                </div>
+
+                <div class="Employée_text">
+                    <h2 class="name">OUMAR</h2>
+
+                    <div class="Employée_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="Employée_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere 
+                        blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti 
+                        asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum, 
+                        dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates 
+                        repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo 
+                        pariatur. Fuga aperiam impedit illo atque repellendus!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+<BR></BR>
+<BR></BR>
+
+    
+
+
+
+    <!--Commande-->
+
+    <div class="Commande" id="Commande">
+        <h1><span>Commandez</span>Maintenant</h1>
+
+        <div class="Commande_main">
+
+            <div class="Commande_image"><BR></BR>
+                <img src="./Table.jfif">
+            </div>
+
+            <form action="#">
+
+                <div class="input">
+                    <p>Nom</p>
+                    <input type="text" placeholder="Votre Nom">
+                </div>
+
+                <div class="input">
+                    <p>Email</p>
+                    <input type="email" placeholder="Votre Email">
+                </div>
+
+                <div class="input">
+                    <p>Numéro</p>
+                    <input placeholder="Votre Numéro">
+                </div>
+
+                <div class="input">
+                    <p>Combien</p>
+                    <input type="numéro" placeholder="Quel est votre Commande">
+                </div>
+
+                <div class="input">
+                    <p>Votre Commande</p>
+                    <input placeholder="Nom du Plat">
+                </div>
+
+                <div class="input">
+                    <p>Addresse</p>
+                    <input placeholder="Votre Adresse">
+                </div>
+
+                <a href="#" class="order_btn" <button id="cmd_button">Commandez Maintenant</button>
+                    <script>
+                        var button=document.getElementById("cmd_button");
+                        button.addEventListener("click",function(){
+                        var 
+                        Nom=prompt('Nom:'),
+                        Prenom=prompt('Prenom:'),
+                        Sexe=prompt('sexe'),
+                        TypedeCarte=prompt('Type de Carte'),
+                        CarteBancaire=prompt('Numéro de la carte'),
+                        DateExpiration=prompt('MM/AA'),
+                        CVC=prompt('CVC'),
+                        Email=prompt('Email');
+                        commande=prompt('Votre commande'),
+                        Montant=prompt('prix');
+                        if((Montant<=0 && CarteBancaire<= maxlength(14) )){
+                            alert('Nom:               '+Nom+
+                            '\nPrenom:             '+Prenom+
+                            '\nSexe:            '+Sexe+
+                            '\nTypedeCarte:        '+TypedeCarte+
+                            '\nCarteBancaire:           '+CarteBancaire+
+                            '\nDateExpiration:                  '+DateExpiration+
+                            '\nCVC:        '+CVC+
+                            '\nEmail:        '+Email+
+                            '\ncommande:        '+commande+
+                            '\nMontant:        '+Montant+
+                            '\nAchat Effectué');
+                        }else{
+                            alert('Nom:'+Nom+
+                            '\nPrenom:'+Prenom+
+                            '\nSexe:'+Sexe+
+                            '\nTypedeCarte:'+TypedeCarte+
+                            '\nCarteBancaire:'+CarteBancaire+
+                            '\nDateExpiration:'+DateExpiration+
+                            '\nCVC:'+CVC+
+                            '\nEmail:'+Email+
+                            '\ncommande:'+commande+
+                            '\nMontant:'+Montant+
+                            '\nSolde Insuffisant ou Verifier vos données');
+                        }
+                         }
+                                        );</script> </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Kalaban Coura près du feux tricolores de Garantiguibougou</p>
+                <p>Kalaban Coura ACI sur la route du 30 Mètre</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Liens</h2>
+                <p>Acceuil</p>
+                <p>A Propos</p>
+                <p>Menu</p>
+                <p>Commande</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p><a href="Tel+">+223 70 18 54 18</a></p>
+                <p> <a href="Tel">+223 89 77 55 79</a></p>
+                <p><a href="Tel">+223 73 44 46 33</a></p>
+                
+            </div>
+
+            <div class="footer_tag">
+                <h2>Nos Services</h2>
+                <p>Livraison Rapide</p>
+                <p>Moyen de Paiement Facile</p>
+                <p>24 x 7 Service Ouverte</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Suivez</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> OUMAR BUSINESS CENTER</span></p>
+
+    </footer>
+
+
+
+    
+</body>
+</html>

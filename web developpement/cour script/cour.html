@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="cour2.js"></script>
+    
+    
+    
+    <div id="parent-id">
+        <p>bonjour depuis dans div</p>
+        <p class="test">hello word2</p>
+        <p class="test">hello word3</p>
+        <p>hello word4</p>
+    </div>
+    <script>
+        var parentDom = document.getElementById("parent-id");
+        alert(parentDom)
+
+        var test=parentDom.getElementsByName("test");
+        console.log(test);//HTMLCollection[i]
+
+        var testTarget=parentDom.getElementsByClassName("test")[0];
+    </script>
+    
+</body>
+</html>

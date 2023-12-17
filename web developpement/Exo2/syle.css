@@ -1,0 +1,13 @@
+h1{
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    background-color: brown;
+}
+p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    /*background-image:url(./Screenimage\ 2023-07-16\ 114401.png)*/
+    background-attachment: fixed;
+    background-repeat:repeat;
+}

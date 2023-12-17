@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine</title>
+    <link rel="stylesheet" href="./n.css">
+</head>
+<body>
+    <section id="Acceuil">
+        <nav>
+            <div class="logo">
+                <img src="./LOGO FAST GRILL.jpg" alt="">
+            </div>
+
+            <ul>
+                <li><a href="#Acceuil">Acceuil</a></li>
+                <li><a href="#A Propos">A Propos</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Employée">Employée</a></li>
+                <li><a href="#Commande">Commande</a></li>
+            </ul>
+              <a href="./index.html">Login</a>
+              
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"><a href="./Recherche.html">Recherche</a></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+    <div class="app">
+        <form action="">
+            <label for="search">Entrer le nom d'un aliment (en anglais)</label><br>
+            <input type="text" id="search" placeholder="ex : beef">
+        </form>
+        <ul id="result"></ul>
+    </div>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+    section{
+    width: 100%;
+    height: 100vh;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 300px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section a:hover::after{
+    width: 100%;
+}
+section a:hover{
+    color: #fac031;
+}
+section nav ul li a:hover{
+    color: #fac031;
+}
+
+section nav .icon i{
+    font-size: 19px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #fac031;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+        h2 {
+    margin: 6px 0;
+    color: #16d9e7;
+    text-align: center;
+}
+p {
+    color: #36ca79;
+}
+img {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.304);
+}
+li>ul>li {
+    text-align: left;
+}
+
+    </style>
+    <script>
+        
+const result=document.getElementById("result");
+const form = document.querySelector("form");
+const input = document.querySelector("input");
+
+
+let meals=[];
+
+async function fetchMeals(search) {
+    fetch("https://www.themealdb.com/api/json/v1/1/search.php?s="+search)
+    .then((res)=> res.json())
+    .then((data)=>(meals =data.meals));
+
+}; 
+function mealsDisplay() {
+    if (meals === null){
+        result.innerHTML="<h2>Aucun résultat</h2>";
+    } else {
+        meals.length =12;
+            result.innerHTML = meals
+                .map((meal)=> {
+                    let ingredients = [];
+                        for(i=1; i<21; i++) {
+                            if(meal[`strIngredient${i}`]) {
+                                let ingredient = meal[`strIngredient${i}`];
+                                let measure = meal[`strMeasure${i}`];
+
+                                ingredients.push(`<li>${ingredient} - ${measure}</li>`);
+                            }
+                        }       
+                        return `
+                            <li class="card">
+                            <h2>${meal.strMeal}</h2> 
+                            <p>${meal.strArea}</p>
+                            <img src=${meal.strMealThumb} alt="photo ${meal.strMeal}">
+                            <ul>${ingredients}</ul>
+                            </li>  
+                            `
+                    })
+                            .join("");
+                    
+    }
+} 
+
+input.addEventListener("input", (e)=> {
+    fetchMeals(e.target.value);
+});
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+   mealsDisplay();
+});
+
+
+    </script>
+</body>
+</html>

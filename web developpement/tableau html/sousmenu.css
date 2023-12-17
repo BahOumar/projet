@@ -1,0 +1,40 @@
+body{
+    color: beige;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+a{
+    text-decoration: none;
+    color: chocolate;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 1000px;
+}
+header li{
+    display: inline-block;
+    position: relative;
+}
+header li a{
+    display: block;
+    padding: 20px;
+}
+header li a:hover{
+    background-color: aqua;
+    color: rgb(236, 9 , 179);
+}
+header li:hover .sub-menu{
+    display: block;
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+}
+td,th{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    color: blue;
+}

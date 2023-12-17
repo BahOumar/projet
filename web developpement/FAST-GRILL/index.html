@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULER</title>
+    <link rel="stylesheet" href="./form.CSS">
+</head>
+<body>
+    <section id="Acceuil">
+        <nav>
+            <div class="logo">
+                <img src="./LOGO FAST GRILL.jpg" alt="">
+            </div>
+
+            <ul>
+                <li><a href="#Acceuil">Acceuil</a></li>
+                <li><a href="#A Propos">A Propos</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Employée">Employée</a></li>
+                <li><a href="#Commande">Commande</a></li>
+            </ul>
+              <a href="./index.html">Login</a>
+              
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"><a href="./Recherche.html">Recherche</a></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+    <form action="">
+        <div class="Form">
+        <h2>BIENVENUE</h2>
+        <div class="pseudo-container">
+            <label for="pseudo">Utilisateur</label>
+            <input type="text" autocomplete="off" id="pseudo">
+            <span></span>
+        </div>
+
+        <div class="email-container">
+            <label for="email">Email</label>
+            <input type="text" autocomplete="off" id="email">
+            <span></span>
+        </div>
+
+        <div class="password-container">
+            <label for="password">mot de passe</label>
+            <input type="text" autocomplete="off" id="password">
+            <p id="progress-bar"></p>
+            <span></span>
+        </div>
+
+        <div class="confirm-container">
+            <label for="confirm">Confirmer le mot de passe</label>
+            <input type="text" autocomplete="off" id="confirm">
+            <span></span>
+        </div>
+        <a href="./generateurmdp.html">Generer un mot de passe ?</a>
+        <BR>
+        <input type="submit" value="Se Connecter">
+    </div>
+    </form>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+    section{
+    width: 100%;
+    height: 100vh;
+    
+
+}
+section Form h2 {
+    margin-top: 5%;
+    margin-bottom: 20px;
+    margin-right: 450px;
+    margin-left: 550px;
+}
+section Form label {
+    margin-left: 550px;
+}
+/*section Form input {
+    margin-left: 550px;
+}*/
+section Form a {
+    margin-left: 700px;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    margin-top: 2px;
+    
+}
+
+section nav .logo img{
+    width: 300px;
+    cursor: pointer;
+    margin: 7px 0;
+    
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+    display: contents;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section a:hover::after{
+    width: 100%;
+}
+section a:hover{
+    color: #fac031;
+}
+section nav ul li a:hover{
+    color: #fac031;
+}
+
+section nav .icon i{
+    font-size: 19px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #fac031;
+}
+input[type="text"] {
+    border: 2px solid;
+    border-radius: 5px;
+    height: 40px;
+    width: 350px;
+    display: flex;
+    margin-left: 550px;
+}
+    p{
+    background: red;
+    width: 33%;
+    height: 6px;
+    margin: -2px 0 2px;
+    border-radius: 50px;
+    visibility: hidden;
+    transition: 0.3s;
+}
+#security span {
+    display: inline;
+}
+a {
+    margin-left: 172px;
+}
+input[type="submit"] {
+    border: none;
+    background: linear-gradient(65deg, #16d9e7, #5ef9a4);
+    width: 50%;
+    margin: 12px auto 0;
+    padding: 10px;
+    margin-left: 400px;
+}
+input[type="submit"]:hover {
+    filter: brightness(105%);
+    transform: translateX(2px);
+}
+.error input {
+    color: red;
+    border: 1px solid rgba(255, 0, 0, 0.527);
+}
+.error span {
+    visibility: visible;
+    opacity: 1;
+    color: red;
+    margin-left: 550px;
+}
+.progressRed {
+    background: red;
+    width: 33%;
+    visibility: visible;
+}
+.progressBlue {
+    background: #16d9e7;
+    width: 67%;
+    visibility: visible;
+}
+.progressGreen {
+    width: 100%;
+    background: green;
+    visibility: visible;
+}
+</style>
+    <script>
+        const form = document.querySelector('form');
+const inputs = document.querySelectorAll
+('input[type="text"], input[type="password"]');
+
+const progressBar = document.getElementById('progress-bar')
+let pseudo, email, password, confirmPass;
+const errorDisplay = (tag, message, valid) =>{
+    const container = document.querySelector("." + tag +"-container");
+    const span = document.querySelector("." + tag + "-container > span");
+
+    if (!valid) {
+        container.classList.add('error');
+        span.textContent = message;
+    }
+    else  {
+        container.classList.remove('error');
+        span.textContent = message;
+    }}
+
+const pseudoChecker =(value) =>
+{
+    if (value.length > 0 && (value.length < 3 || value.length >20)
+    ){
+        errorDisplay("pseudo", "le pseudo doit faire entre 3 et 20 caracter");
+    pseudo=null;
+    } 
+    else if(!value.match(/^[a-zA-Z0-9_.-]*$/)) {
+        errorDisplay("pseudo","pas de caracter merci de revoir");    
+    pseudo=null;
+    }
+    else{
+        errorDisplay("pseudo", "", true)
+        pseudo = value;
+    }
+};
+
+const emailChecker =(value) =>{
+    if (!value.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i)){
+        errorDisplay('email', " mail pas bon essayer");
+        email =null;
+    }else {
+        errorDisplay('email', "", true);
+        email =value;
+    }
+};
+const passwordChecker =(value) =>{
+    progressBar.classList="";
+
+    if (
+        !value.match(/^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\w]){1,})(?!.*\s).{8,}$/))
+    {
+       progressBar.classList.add("progressRed");
+       password=null;
+    } else if (value.length < 12) {
+        progressBar.classList.add("progressBlue");
+        errorDisplay('password',"fort", true);
+        password=value;
+    } else{
+        progressBar.classList.add("progressGreen");
+        errorDisplay('password',"", true);
+        password=value;
+    } if (confirmPass) confirmChecker(confirmPass);
+    
+};
+const confirmChecker =(value) =>{
+    if (value !==password) {
+       errorDisplay("confirm", 'mdp incorrect mouton');
+       confirmPass=false;
+    }else {
+        errorDisplay('confirm', "", true);
+        confirmPass =true;
+    }
+};
+
+inputs.forEach((input) => {
+    input.addEventListener("input", (e) => {
+        switch (e.target.id) {
+            case "pseudo" :
+                pseudoChecker(e.target.value); break;
+            case "email":
+                emailChecker(e.target.value); break;
+            case "password":
+                passwordChecker(e.target.value); break;
+            case "confirm": 
+                confirmChecker(e.target.value); break;
+                default:null;
+        }});});
+
+form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+
+    if(pseudo && email && password && confirmPass) {
+        const data = {          
+            pseudo,
+            email,
+            password,       
+        };
+
+        console.log(data);
+        inputs.forEach((input)=> (input.value =""));
+        progressBar.classList="";
+
+        pseudo=null,
+        email=null,
+        password=null,
+        confirmPass=null,
+        alert('valider')
+    } else {
+        alert('remplir correctement');
+    }
+});
+    </script>
+</body>
+</html>

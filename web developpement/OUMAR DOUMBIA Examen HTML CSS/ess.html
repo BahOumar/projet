@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+var
+Nom=prompt('Nom:'),
+Prenom=prompt('Prénom:'),
+Age=prompt('age'),
+sexe=prompt('sexe'),
+pays=prompt('pays d\'origine'),
+CarteBancaire=prompt('numéro de la carte'),
+TypeCarte=prompt('type de la carte'),
+DateExpiration=prompt('mm/aa'),
+Cvc=prompt('cvc'),
+Email=prompt('Email');
+Commande=prompt('Commande:'),
+montant=prompt('montant');
+if(montant<=0 && CarteBancaire<= maxlength(14) ){
+       alert('Nom:           '+Nom+
+           '\nPrénom:         '+Prenom+
+           '\nAge:             '+Age+
+           '\nSexe:             '+Sexe+
+           '\nNationalité:      '+Pays+
+           '\nCarteBancaire:           '+CarteBancaire+
+           '\nTypeCarte:           '+TypeCarte+
+           '\nDateExpiration:           '+DateExpiration+
+           '\nCvc:           '+Cvc+
+           '\nEmail:           '+Email+
+           '\nCommande:           '+Commande+
+           '\nmontant:           '+montant+
+           '\nDossier Accepter Félicitation');
+}else{
+    alert('Nom:'+Nom+
+           '\nPrénom:'+Prenom+
+           '\nAge:'+Age+
+           '\nSexe:'+Sexe+
+           '\nNationalité:'+Pays+
+           '\nCarteBancaire:'+CarteBancaire+
+           '\nTypeCarte:'+TypeCarte+
+           '\nDateExpiration:'+DateExpiration+
+           '\nCvc:'+Cvc+
+           '\nEmail:'+Email+
+           '\nCommande:'+Commande+
+           '\nmontant:'+montant+
+           '\nDossier Non Accepter vérifier si tout les coordonnés sont bien ');
+};
+</script>
+</body>
+</html>

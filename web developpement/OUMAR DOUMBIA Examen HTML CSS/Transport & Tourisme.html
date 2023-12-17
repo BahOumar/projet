@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Business</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>MY Business<span class="orange">.</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="./Acceuil.html">Accueil |</a></li>
+                    <li><a href="./Vente et Achat.html">Vente & Achat |</a></li>
+                    <li><a href="./Transport & Tourisme.html">Transport & Tourisme |</a></li>
+                    <li><a href="./Consultation & Assistance.html">Consultation & Assistance</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="main-image">
+        <div class="wrapper">
+           <h2>Organisez votre<br><strong>Voyage sur mesure</strong></h2> 
+            <a href="" class="button-1">Par ici</a>
+        </div>
+    
+    </section>
+    <section id="steps">
+        <div class="wrapper">
+            <ul>
+                <li id="step-1">
+                    <h4>Planifier</h4>
+                    <p>Confiez-nous vos rêves d’évasion : en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.</p>
+                </li>
+                <li id="step-2">
+                    <h4>Organisez</h4>
+                    <p>Bénéficiez de l’expertise de nos spécialistes de chaque destination, ils vous accompagnent dans la réalisation de votre voyage.</p>
+            
+                </li>
+                <li id="step-3">
+                    <h4>Voyager</h4>
+                    <p>Nous nous chargeons d’assurer votre sécurité et de veiller à votre pleine sérénité tout au long de votre voyage.</p>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </section>
+    <section id="possibilities">
+        <div class="wrapper">
+            <article id="possibility-1">
+                <div class="overlay">
+                    <h4>Partez en famille</h4>
+                    <p><small>Offrez le meilleur à ceux que vous aimez et partagez des moments fabuleux !</small></p>
+                    <a href="" class="button-2">Plus d'info</a>
+                </div>
+            </article>
+            <article id="possibility-2">
+                <div class="overlay">
+                    <h4>ENVIE DE S'EVADER</h4>
+                    <p><small>Parfois un peu d'évasion serait le bienvenue et ferait le plus grand bien !</small></p>
+                    <a href="" class="button-2">Plus d'info</a>
+                </div>
+            </article>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="wrapper">
+            <h3>Contactez-nous</h3>
+            <p>Princeneer tour agence de voyage nous savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+            
+            <form>
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="Votre nom">
+                <label for="email">Email</label>
+                <input type="text" id="name" placeholder="Votre email">
+                <input type="submit" value="Ok" class="button-3">
+                
+            </form>
+        </div>
+        <footer>
+            <div>
+                <h1>Princeneer tour<span class="orange">.</span></h1>
+                
+                <div class="copyright">Copyright © Tous droits réservés. Ybenson AGUSTAVE, étudiant TI FATEC OSASCO</div>
+            </div>
+        </footer>
+    </section>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+}
+h1, h2,h3,h4
+{
+    color: #444;
+}
+h1
+{
+    font-family: 'Crete Round', serif;
+    font-size: 45px;
+}
+h2
+{
+    font-size: 55px;
+}
+h3
+{
+    font-size: 30px;
+}
+h4
+{
+    font-size: 24px;
+}
+p
+{
+    line-height: 20px;
+    color: #777;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: #444;
+}
+.wrapper
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.orange
+{
+    color: #ff7a00;
+}
+.clear
+{
+    clear: both;
+}
+small
+{
+    font-size: 13px;
+    font-style:italic;
+}
+        /* HEADER */
+
+header
+{
+    height: 120px;
+}
+header h1
+{
+    float: left;
+    margin-top: 32px;
+}
+header nav
+{
+    float: right;
+    margin-top: 50px;
+}
+header nav ul li
+{
+    float:left;
+    display: inline-block;
+}
+header nav ul li a
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* MAIN IMAGE */
+
+#main-image
+{
+    height: 580px;
+    background: url('images/main.jpg') center;
+}
+#main-image h2
+{
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 150px 0 40px 0;
+    margin-bottom: 20px;
+}
+.button-1
+{
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: #ff7a00;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    border-radius:  3px;
+}
+.button-1:hover
+{
+    background: #02b8dd;
+}
+    </style>
+</body>
+</html>
